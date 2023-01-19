@@ -20,6 +20,14 @@ The following resources will be created:
 | Identifier | EC2 instance or Aurora Cluster identifier for schedule| any | n/a| yes | 
 |------- | --- | --- | ------- | --- |
 
+# Steps for EC2 instances Scheduling:
+1.Define Workspaces and instance_id in workspaces which you want to schedule,Also you can change the instance_id whenever you want to do so.
+![Screenshot (161)](https://user-images.githubusercontent.com/109335469/213354284-50457df7-4cc9-4d39-8117-bb1f311b2687.png)
+
+2. Define the schedule or Timing in which you want to Run the Machine according to your requirements.
+![Screenshot (162)](https://user-images.githubusercontent.com/109335469/213355251-47f9e505-9082-4d35-9b16-8a8e25b052fe.png)
+
+
 # Step for event start and stop
 1.start EC2:- "aws_cloudwatch_event_rule" 
 
