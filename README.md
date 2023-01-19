@@ -8,18 +8,6 @@ The following resources will be created:
 - AWS Cloudwatch event rule - Delivers a real-time stream of system events that shut down or start the EC2.
 - Identity Access Management (IAM) that create a service role for Systems Manager Automation.
 
-# Requirements
-| Name  | Version |
-| ------------- | ------------- |
-| terraform | >=0.12.0  |
-
-
-# Providers
-
-| Name | Version |
-| ------------- | ------------- |
-| aws  | N/A |
-| Random  | N/A |
 
 # Inputs
 
