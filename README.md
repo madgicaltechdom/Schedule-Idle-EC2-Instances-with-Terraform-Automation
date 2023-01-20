@@ -11,6 +11,7 @@ The following resources will be created:
 
 # Inputs
 
+
 | NAME | Description  | Type|  Default| Required | 
 |---------| ------------------| --- | ------- | --- | 
 | cron_start |Cron expression to define when to trigger a start of the EC2 | any | n/a| yes | 
