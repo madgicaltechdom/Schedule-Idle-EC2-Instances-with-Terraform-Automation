@@ -36,7 +36,7 @@ The following resources will be created:
 
 # Steps to Add or Modify Schedule:-
 
-1. Define the schedule or Timing in which you want to Run the Machine according to your requirements.
+1. Define the schedule or Timing in which you want to Run the Machine according to your requirements.Such as in line 21 and 26
 
 ![Screenshot (162)](https://user-images.githubusercontent.com/109335469/213355251-47f9e505-9082-4d35-9b16-8a8e25b052fe.png)
 
@@ -71,21 +71,24 @@ terraform workspace new qa
 ```
 # Steps To Execute Terraform:-
 1.Clone this repository to your local machine:
-git clone https://github.com/kaumudi766/Multi_Machine_Schedule.git
 
-1. Run terraform init command (which initialize your code)
+- git clone https://github.com/kaumudi766/Multi_Machine_Schedule.git
+
+
+
+2. Run terraform init command (which initialize your code)
 
 ```sh
 terraform init
 ```
 
-2.Run terraform plan command .
+3.Run terraform plan command .
 
 ```sh
 terraform plan
 ```
 
-3.Run terraform apply command.
+4.Run terraform apply command.
 
 ```sh
 terraform apply
