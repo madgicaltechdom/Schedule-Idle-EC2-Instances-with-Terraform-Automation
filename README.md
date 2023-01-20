@@ -38,7 +38,8 @@ The following resources will be created:
 
 1. Define the schedule or Timing in which you want to Run the Machine according to your requirements.Such as in line 21 and 26
 
-![Screenshot (162)](https://user-images.githubusercontent.com/109335469/213355251-47f9e505-9082-4d35-9b16-8a8e25b052fe.png)
+![Screenshot (167)](https://user-images.githubusercontent.com/109335469/213634759-380a6775-c15f-4a97-9ee3-73d3e5274aa3.png)
+
 
 
 #  Steps To Create Terraform workspace for Non-Production Machine:-
