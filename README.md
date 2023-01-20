@@ -1,4 +1,5 @@
 # Multi-Machine-Schedule
+This repository contains the necessary files and instructions for scheduling EC2 machines using Terraform.
 This repository is used for non-production instances, and it is sufficiently flexible to enable us to switch among different numbers of machines by changing a variable instance id.
 # Turn-off-and-on-EC2 machine
 I took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/)
@@ -26,12 +27,10 @@ The following resources will be created:
 |------- | --- | --- | ------- | --- | 
 | cron_stop|Cron expression to define when to trigger a stop of the EC2  | any | n/a | yes| 
 |------- | --- | --- | ------- | --- | 
-| Identifier | EC2 instance or Aurora Cluster identifier for schedule| any | n/a| yes | 
-|------- | --- | --- | ------- | --- |
 
 # Steps to Add or Modify a Machine:
 
-1.Define Workspaces and instance_id in workspaces which you want to schedule,Also you can change the instance_id whenever you want to do so.
+1.Define Workspaces and instance_id in workspaces which you want to schedule,Also you can change the instance_id whenever you want to do so.Such as in line 13 and 14.
 
 ![Screenshot (161)](https://user-images.githubusercontent.com/109335469/213354284-50457df7-4cc9-4d39-8117-bb1f311b2687.png)
 
@@ -71,6 +70,9 @@ c. Run terraform workspace new qa (to create testing workspaces)
 terraform workspace new qa
 ```
 # Steps To Execute Terraform:-
+1.Clone this repository to your local machine:
+git clone https://github.com/kaumudi766/Multi_Machine_Schedule.git
+
 1. Run terraform init command (which initialize your code)
 
 ```sh
@@ -97,22 +99,14 @@ terraform destroy
 # When should you destroy the Machine
 - when  machine is not  required any more or you should have new machine with more cost efficient.
 
-# Step for role policy:-
-1.Roles policy event: "aws_iam_policy_document"
+# Verify If The Machine Is Stopped or Start At The Specific Time Or Not ?
+1.Open AWS Account than click on Cloud WAtch then click on event and then click on Rules we will be able to see the Scheduling of Machines:-
+![Screenshot (164)](https://user-images.githubusercontent.com/109335469/213627800-67f59476-b0f5-41de-b101-baa85172fba7.png)
+![Screenshot (163)](https://user-images.githubusercontent.com/109335469/213627931-83e754df-aed5-439c-be9c-91c0000290e3.png)
+![Screenshot (165)](https://user-images.githubusercontent.com/109335469/213628033-f8444a0f-f991-4f25-aea7-4899526d3b3b.png)
 
-![Screenshot (55)](https://user-images.githubusercontent.com/109335469/206841630-4538c95a-ece3-476e-80f8-36d0d32f8bef.png)
-
-2.Role policy_trust event:aws_iam_policy_document
-
-![Screenshot (56)](https://user-images.githubusercontent.com/109335469/206841665-92edf001-98ff-4fd2-9e49-a7a24bb56f6c.png)
-
-3.EC2 scheduling
-![Screenshot (57)](https://user-images.githubusercontent.com/109335469/206841697-19111d15-58b4-4bbb-93c0-c83ca1354530.png)
-
-![Screenshot (58)](https://user-images.githubusercontent.com/109335469/206842572-07abc5bd-f606-4c23-afff-8acd082f7278.png)
-
-![Screenshot (59)](https://user-images.githubusercontent.com/109335469/206842583-8c7c9880-1eec-4a7b-b03e-12989d3394dd.png)
-
+2. Check The Execution Point Using System Manager:-
+![Screenshot (166)](https://user-images.githubusercontent.com/109335469/213628972-0fbba94e-50c8-4671-b518-6e0a38bfd413.png)
 
 ## Exact permissions we required are:-
 
