@@ -71,7 +71,7 @@ I took information from this [article](https://dnx.solutions/reducing-aws-costs-
      ```
      terraform apply
         ```
-11. Create terraform workspace for qa  at line 4 in the variable.tf file       
+11. Create terraform workspace for qa        
     ```
      terraform workspace new qa
      ```
