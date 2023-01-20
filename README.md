@@ -35,13 +35,43 @@ The following resources will be created:
 
 ![Screenshot (161)](https://user-images.githubusercontent.com/109335469/213354284-50457df7-4cc9-4d39-8117-bb1f311b2687.png)
 
-2. Define the schedule or Timing in which you want to Run the Machine according to your requirements.
+# Steps to Add or Modify Schedule:-
+
+1. Define the schedule or Timing in which you want to Run the Machine according to your requirements.
 
 ![Screenshot (162)](https://user-images.githubusercontent.com/109335469/213355251-47f9e505-9082-4d35-9b16-8a8e25b052fe.png)
 
 
-# Step for event start and stop
-1.start EC2:- "aws_cloudwatch_event_rule" 
+#  Steps To Create Terraform workspace for Non-Production Machine:-
+
+1.Terraform manages the infrastructure with state file/state by default we have one  basic set of state.
+
+2.With workspaces we have more then one state with same configaration file,i.e one infrastructure with different state file.
+
+3.I have created here two environment qa and prod i.e for qa for testing and prod for production.
+
+ 4.Create a new workspaces: Run the following command:
+ 
+ a.Run terraform  workspace list(show all workspaces we have by default we have one default alredy present there)
+
+  
+  
+  ```sh
+terraform workspace list
+```
+
+b. Run terraform workspace new prd (to create production workspaces)
+
+```sh
+terraform workspace new prd
+```
+c. Run terraform workspace new qa (to create testing workspaces)
+
+```sh
+terraform workspace new qa
+```
+
+
 
 ![Screenshot (53)](https://user-images.githubusercontent.com/109335469/206841454-6b82212a-943b-4443-a902-5ea3c9914d57.png)
 
