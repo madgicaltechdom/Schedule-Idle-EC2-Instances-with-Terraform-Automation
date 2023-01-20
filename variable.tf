@@ -18,12 +18,12 @@ variable "source_instances_map" {
 
 variable "cron_stop" {
   description = "Cron expression to define when to trigger a stop of the DB"
-  default     = "30 20 ? * MON-SAT *"
+  default     = "30 14 ? * MON-SAT *"
 }
 
 variable "cron_start" {
   description = "Cron expression to define when to trigger a start of the DB"
-  default     = "30 04 ? * MON-SAT *"
+  default     = "30 03 ? * MON-SAT *"
 }
 
 variable "enable" {
