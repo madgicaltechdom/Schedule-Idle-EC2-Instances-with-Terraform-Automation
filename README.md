@@ -78,15 +78,19 @@ I took information from this [article](https://dnx.solutions/reducing-aws-costs-
 
 
 # Verify Machines Status
-1. Click on the link to see status            https://us-east-2.console.aws.amazon.com/cloudwatch/home?region=us-east-2#rules:
+1. Click on the link below  to see status
+ https://us-east-2.console.aws.amazon.com/cloudwatch/home?region=us-east-2#rules:
 
-![Screenshot (164)](https://user-images.githubusercontent.com/109335469/213627800-67f59476-b0f5-41de-b101-baa85172fba7.png)
+![Screenshot (164) (1)](https://user-images.githubusercontent.com/109335469/213730422-0e4803f2-4fc8-45ba-bfe0-0cad41313a79.png)
 
-![Screenshot (163)](https://user-images.githubusercontent.com/109335469/213627931-83e754df-aed5-439c-be9c-91c0000290e3.png)
+![Screenshot (163) (1)](https://user-images.githubusercontent.com/109335469/213730110-2867fbf6-71a8-4758-b099-eafd87d66010.png)
 
-![Screenshot (165)](https://user-images.githubusercontent.com/109335469/213628033-f8444a0f-f991-4f25-aea7-4899526d3b3b.png)
+![Screenshot (165) (1)](https://user-images.githubusercontent.com/109335469/213731007-5f9390a6-8557-4946-b307-d1d02a14b5d5.png)
 
-2. Check The Execution Point Using System Manager by clicking on the link below: https://us-east-2.console.aws.amazon.com/systems-manager/automation/executions?region=us-east-2
+
+
+2. Check The Execution Point Using System Manager by clicking on the link below: 
+https://us-east-2.console.aws.amazon.com/systems-manager/automation/executions?region=us-east-2
 
 ![Screenshot (166)](https://user-images.githubusercontent.com/109335469/213628972-0fbba94e-50c8-4671-b518-6e0a38bfd413.png)
 
