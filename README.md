@@ -1,10 +1,13 @@
 # EC2 Machine Scheduling using Terraform
 This repository contains the necessary files and instructions for scheduling EC2 machines using Terraform. With this solution, you'll be able to schedule the start and stop of your instances based on your business needs.
 
+I took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) 
+
 ## Requirements
-- Terraform 0.13 or later
+ - Install terraform [video](https://www.youtube.com/watch?v=Cn6xYf0QJME&t=8s)
  - An AWS account with permissions to work with EC2 instances and AutoScaling Groups
-- AWS CLI and credentials configured
+ - AWS CLI and credentials configured
+ - Create IAM user with programmatic access and administrator Access [video](https://www.youtube.com/watch?v=Xx_-IA9qnuI)
 ## Usage
 1. Clone this repository to your local machine:
 
@@ -70,40 +73,21 @@ This repository contains the necessary files and instructions for scheduling EC2
         ```
 11. Create terraform workspace for qa  at line 4 in the variable.tf file       
     ```
-     variable "workspace_to_environment_map" {
-    type = map(string)
-    default = {
-    qa  = "qa"
-    prd = "prd"
-      }
-     }
+     terraform workspace new qa
      ```
 
 
-# Multi-Machine-Schedule
-This repository contains the necessary files and instructions for scheduling EC2 machines using Terraform.
-This repository is used for non-production instances, and it is sufficiently flexible to enable us to switch among different numbers of machines by changing a variable instance id.
-
-I took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) 
-## Prerequisite:-
-
-- Install terraform [video](https://www.youtube.com/watch?v=Cn6xYf0QJME&t=8s)
-- Setup your AWS account [video](https://www.youtube.com/watch?v=XhW17g73fvY&t=357s)
-- Create IAM user with programmatic access and administrator Access [video](https://www.youtube.com/watch?v=Xx_-IA9qnuI)
-
-## Terraform-aws-EC2-scheduler
-This is a module to create a schedule to shut down or start a Resource instance (EC2).
-The following resources will be created:
-- AWS Cloudwatch event rule - Delivers a real-time stream of system events that shut down or start the EC2.
-- Identity Access Management (IAM) that create a service role for Systems Manager Automation.
-
 # Verify Machines Status
 1. Click on the link to see status            https://us-east-2.console.aws.amazon.com/cloudwatch/home?region=us-east-2#rules:
+
 ![Screenshot (164)](https://user-images.githubusercontent.com/109335469/213627800-67f59476-b0f5-41de-b101-baa85172fba7.png)
+
 ![Screenshot (163)](https://user-images.githubusercontent.com/109335469/213627931-83e754df-aed5-439c-be9c-91c0000290e3.png)
+
 ![Screenshot (165)](https://user-images.githubusercontent.com/109335469/213628033-f8444a0f-f991-4f25-aea7-4899526d3b3b.png)
 
 2. Check The Execution Point Using System Manager by clicking on the link below: https://us-east-2.console.aws.amazon.com/systems-manager/automation/executions?region=us-east-2
+
 ![Screenshot (166)](https://user-images.githubusercontent.com/109335469/213628972-0fbba94e-50c8-4671-b518-6e0a38bfd413.png)
 
 
