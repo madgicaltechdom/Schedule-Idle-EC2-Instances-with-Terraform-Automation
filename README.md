@@ -1,7 +1,15 @@
 # Multi-Machine-Schedule
+This repository is used for non-production instances, and it is sufficiently flexible to enable us to switch among different numbers of machines by changing a variable instance id.
 # Turn-off-and-on-EC2 machine
 I took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/)
 and apply terraform through this [article](https://github.com/DNXLabs/terraform-aws-rds-scheduler) and code is explained in this [video](https://shorthillstech-my.sharepoint.com/personal/kapil_jain_shorthillstech_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fkapil%5Fjain%5Fshorthillstech%5Fcom%2FDocuments%2FTraining%2FDevOps%2FProjects%2Fmachine%20scheduling%5Fkaumudi%2Emp4&parent=%2Fpersonal%2Fkapil%5Fjain%5Fshorthillstech%5Fcom%2FDocuments%2FTraining%2FDevOps%2FProjects) and timing is explained in this  [video2](https://shorthillstech-my.sharepoint.com/personal/kapil_jain_shorthillstech_com/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fkapil%5Fjain%5Fshorthillstech%5Fcom%2FDocuments%2FTraining%2FDevOps%2FProjects%2Fmachine%5Fschedule%5Fkaumudi%2Emp4&parent=%2Fpersonal%2Fkapil%5Fjain%5Fshorthillstech%5Fcom%2FDocuments%2FTraining%2FDevOps%2FProjects)
+
+>Prerequirement:-
+
+- Install terraform [video](https://www.youtube.com/watch?v=Cn6xYf0QJME&t=8s)
+- Setup your AWS account [video](https://www.youtube.com/watch?v=XhW17g73fvY&t=357s)
+- Create IAM user with programmatic access and administrator Access [video](https://www.youtube.com/watch?v=Xx_-IA9qnuI)
+
 ## Terraform-aws-EC2-scheduler
 This is a module to create a schedule to shut down or start a Resource instance (EC2).
 The following resources will be created:
@@ -21,7 +29,7 @@ The following resources will be created:
 | Identifier | EC2 instance or Aurora Cluster identifier for schedule| any | n/a| yes | 
 |------- | --- | --- | ------- | --- |
 
-# Steps for EC2 instances Scheduling:
+# Steps to Add or Modify a Machine:
 
 1.Define Workspaces and instance_id in workspaces which you want to schedule,Also you can change the instance_id whenever you want to do so.
 
