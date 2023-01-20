@@ -18,7 +18,7 @@ variable "source_instances_map" {
 
 variable "cron_stop" {
   description = "Cron expression to define when to trigger a stop of the DB"
-  default     = "57 17 ? * MON-SAT *"
+  default     = "30 20 ? * MON-SAT *"
 }
 
 variable "cron_start" {
