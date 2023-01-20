@@ -78,7 +78,8 @@ I took information from this [article](https://dnx.solutions/reducing-aws-costs-
 
 
 # Verify Machines Status
-1. Click on the link below  to see status
+1. Click on the link below  to see status 
+
  https://us-east-2.console.aws.amazon.com/cloudwatch/home?region=us-east-2#rules:
 
 ![Screenshot (164) (1)](https://user-images.githubusercontent.com/109335469/213730422-0e4803f2-4fc8-45ba-bfe0-0cad41313a79.png) 
