@@ -70,14 +70,32 @@ c. Run terraform workspace new qa (to create testing workspaces)
 ```sh
 terraform workspace new qa
 ```
+# Steps To Execute Terraform:-
+1. Run terraform init command (which initialize your code)
 
+```sh
+terraform init
+```
 
+2.Run terraform plan command .
 
-![Screenshot (53)](https://user-images.githubusercontent.com/109335469/206841454-6b82212a-943b-4443-a902-5ea3c9914d57.png)
+```sh
+terraform plan
+```
 
-2.Stop EC2:-"aws_cloudwatch_event_rule" 
+3.Run terraform apply command.
 
-![Screenshot (54)](https://user-images.githubusercontent.com/109335469/206841471-c8cc2702-df32-41ce-bef4-7a1261e87f4e.png)
+```sh
+terraform apply
+```
+# STEPS TO DESTROY THESE MACHINES:-
+
+1.Run terraform destroy
+```sh
+terraform destroy
+```
+# When should you destroy the Machine
+- when  machine is not  required any more or you should have new machine with more cost efficient.
 
 # Step for role policy:-
 1.Roles policy event: "aws_iam_policy_document"
