@@ -70,9 +70,9 @@ I took information from this [article](https://dnx.solutions/reducing-aws-costs-
      ```
      terraform apply
         ```
-11. Create terraform workspace for qa        
+11. Create a new workspace for each environment you want to deploy, for example for qa (testing):      
     ```
-     terraform workspace new qa
+     terraform workspace new qa 
      ```
 
 
