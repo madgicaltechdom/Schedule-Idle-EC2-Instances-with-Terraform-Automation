@@ -5,8 +5,7 @@ I took information from this [article](https://dnx.solutions/reducing-aws-costs-
 
 ## Requirements
  - Install terraform [video](https://www.youtube.com/watch?v=Cn6xYf0QJME&t=8s)
- - An AWS account with permissions to work with EC2 instances and AutoScaling Groups
- - AWS CLI and credentials configured
+ - An AWS account with permissions to work with EC2 instances and AutoScaling Group.
  - Create IAM user with programmatic access and administrator Access [video](https://www.youtube.com/watch?v=Xx_-IA9qnuI)
 ## Usage
 1. Clone this repository to your local machine:
