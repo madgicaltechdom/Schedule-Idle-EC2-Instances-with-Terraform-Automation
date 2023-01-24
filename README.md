@@ -5,7 +5,7 @@ This repository contains the necessary files and instructions for scheduling EC2
 
 ## Requirements
  - Install terraform [video](https://www.youtube.com/watch?v=Cn6xYf0QJME&t=8s)
- - Create a programmatic user with the permissions specified in the permission.json file
+ - Create a programmatic user with the permissions specified in the [permission.json](https://github.com/kaumudi766/Multi_Machine_Schedule/blob/main/permission.json) file
 ## Usage
 1. Clone this repository to your local machine:
 
@@ -16,46 +16,46 @@ This repository contains the necessary files and instructions for scheduling EC2
     ```
    cd Multi_Machine_Schedule
     ```
-3. Change the instances array starting at line 13 in the file varible.tf to meet your requirements.
+3. Change the instances array starting at value in the file variable.tf to meet your requirements.
     ```
-            variable "source_instances_map" {
-           description = "A map from instances to a list of instance id"
-           type        = map(any)
-           default = {
-               qa  = ["i-0f31364caf36906f4", "i-0d14c3b9fe0ec4f54", "i-0f0ae101cf8e3202e", "i-0d605ef016c561e57"]
-                prd = []
-               }
-               }
-      ```
+    variable "source_instances_map" {
+       description = "A map from instances to a list of instance id"
+       type        = map(any)
+       default = {
+           qa  = ["i-0f31364caf36906f4", "i-0d14c3b9fe0ec4f54", "i-0f0ae101cf8e3202e", "i-0d605ef016c561e57"]
+            prd = []
+        }
+    }
+    ```
 4. Change the  stopping time  at line 21 in the file variable.tf to meet your requirements.
     ```
-            variable "cron_stop" {
-            description = "Cron expression to define when to trigger a stop of the DB"
-           default     = "30 14 ? * MON-SAT *"
-           }
+    variable "cron_stop" {
+        description = "Cron expression to define when to trigger a stop of the DB"
+        default     = "30 14 ? * MON-SAT *"
+    }
    ```
  5. Change  starting time  at line number 26 in the file varible.tf to meet your requirements
     ```
-            variable "cron_start" {
-            description = "Cron expression to define when to trigger a start of the DB"
-            default     = "30 03 ? * MON-SAT *"
-             }
+    variable "cron_start" {
+        description = "Cron expression to define when to trigger a start of the DB"
+        default     = "30 03 ? * MON-SAT *"
+     }
     ```
-6. Change the AWS access key at line 35 in the file varible.tf to meet your requirements.
+6. Change the AWS access key value in the file varible.tf to meet your requirements.
     ```
-            variable "access_key" {
-            description = "value of access key"
-            default     = ""
-           }
+    variable "access_key" {
+        description = "value of access key"
+        default     = ""
+    }
      ```
 
-7. Change the AWS secret key at line 40 in the file varible.tf to meet your    requirements.
+7. Change the AWS secret key value in the file variable.tf to meet your    requirements.
     
     ``` 
-              variable "secret_key" {
-                description = "value of secret key"
-                default     = ""
-        }
+    variable "secret_key" {
+        description = "value of secret key"
+        default     = ""
+    }
    ```
 8. Create a new workspace for each environment you want to deploy, for example for qa (testing): 
    ```
@@ -71,9 +71,9 @@ This repository contains the necessary files and instructions for scheduling EC2
     terraform plan
     ```
 11. Apply the changes
-```
-     terraform apply
- ```
+    ```
+    terraform apply
+    ```
    
    
 
