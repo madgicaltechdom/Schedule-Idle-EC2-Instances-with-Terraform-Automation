@@ -69,6 +69,7 @@ This repository contains the necessary files and instructions for scheduling EC2
     ```
    terraform plan
    ```
+   
 11.  Apply the changes:
      ```
      terraform apply
