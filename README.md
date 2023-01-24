@@ -1,12 +1,11 @@
 # EC2 Machine Scheduling using Terraform
 This repository contains the necessary files and instructions for scheduling EC2 machines using Terraform. With this solution, you'll be able to schedule the start and stop of your instances based on your business needs.
 
-I took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) and this is [video](https://t43312857.p.clickup-attachments.com/t43312857/37a20fb7-f878-486f-9bb3-0ae66e34b169/Multi-Machine-Scheduling-kaumudi.mp4) for  implementation.
+ This is [video](https://t43312857.p.clickup-attachments.com/t43312857/37a20fb7-f878-486f-9bb3-0ae66e34b169/Multi-Machine-Scheduling-kaumudi.mp4) for  implementation.
 
 ## Requirements
  - Install terraform [video](https://www.youtube.com/watch?v=Cn6xYf0QJME&t=8s)
- - An AWS account with permissions to work with EC2 instances and AutoScaling Group.
- - Create IAM user with programmatic access and administrator Access [video](https://www.youtube.com/watch?v=Xx_-IA9qnuI)
+ - Create IAM user with programmatic access  [video](https://www.youtube.com/watch?v=Xx_-IA9qnuI)
 ## Usage
 1. Clone this repository to your local machine:
 
@@ -19,44 +18,44 @@ I took information from this [article](https://dnx.solutions/reducing-aws-costs-
     ```
 3. Change the instances array starting at line 13 in the file varible.tf to meet your requirements.
     ```
-    variable "source_instances_map" {
-   description = "A map from instances to a list of instance id"
-   type        = map(any)
-   default = {
-   qa  = ["i-0f31364caf36906f4", "i-0d14c3b9fe0ec4f54", "i-0f0ae101cf8e3202e", "i-0d605ef016c561e57"]
-    prd = []
-   }
-   }
+            variable "source_instances_map" {
+           description = "A map from instances to a list of instance id"
+           type        = map(any)
+           default = {
+               qa  = ["i-0f31364caf36906f4", "i-0d14c3b9fe0ec4f54", "i-0f0ae101cf8e3202e", "i-0d605ef016c561e57"]
+                prd = []
+               }
+               }
       ```
-4. Change the  stopping time  at line 21 in the file varible.tf to meet your requirements.
+4. Change the  stopping time  at line 21 in the file variable.tf to meet your requirements.
     ```
-    variable "cron_stop" {
-    description = "Cron expression to define when to trigger a stop of the DB"
-   default     = "30 14 ? * MON-SAT *"
-   }
+            variable "cron_stop" {
+            description = "Cron expression to define when to trigger a stop of the DB"
+           default     = "30 14 ? * MON-SAT *"
+           }
    ```
  5. Change  starting time  at line number 26 in the file varible.tf to meet your requirements
     ```
-    variable "cron_start" {
-    description = "Cron expression to define when to trigger a start of the DB"
-    default     = "30 03 ? * MON-SAT *"
-     }
+            variable "cron_start" {
+            description = "Cron expression to define when to trigger a start of the DB"
+            default     = "30 03 ? * MON-SAT *"
+             }
     ```
 6. Change the AWS access key at line 35 in the file varible.tf to meet your requirements.
     ```
-    variable "access_key" {
-    description = "value of access key"
-    default     = ""
-   }
+            variable "access_key" {
+            description = "value of access key"
+            default     = ""
+           }
      ```
 
 7. Change the AWS secret key at line 40 in the file varible.tf to meet your    requirements.
     
     ``` 
-      variable "secret_key" {
-        description = "value of secret key"
-        default     = ""
-    }
+              variable "secret_key" {
+                description = "value of secret key"
+                default     = ""
+        }
    ```
 8. Initialize Terraform by running:
     ```
@@ -99,5 +98,5 @@ https://us-east-2.console.aws.amazon.com/systems-manager/automation/executions?r
 
 <img width="906" alt="Screenshot (166)" src="https://user-images.githubusercontent.com/109335469/213734723-5a2d5503-472f-48d2-b827-c9225e2ba14f.png">
 
-
+I took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) and this is [video](https://t43312857.p.clickup-attachments.com/t43312857/37a20fb7-f878-486f-9bb3-0ae66e34b169/Multi-Machine-Scheduling-kaumudi.mp4) for  implementation.
 
