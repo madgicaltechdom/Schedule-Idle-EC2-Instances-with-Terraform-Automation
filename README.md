@@ -11,11 +11,11 @@ I took information from this [article](https://dnx.solutions/reducing-aws-costs-
 1. Clone this repository to your local machine:
 
     ```
-    git clone https://github.com/username/ec2-scheduling-terraform.git
+    git clone https://github.com/kaumudi766/Multi_Machine_Schedule
     ```
 2. Navigate to the repository directory:
     ```
-   cd ec2-scheduling-terraform
+   cd Multi_Machine_Schedule
     ```
 3. Change the instances array starting at line 13 in the file varible.tf to meet your requirements.
     ```
