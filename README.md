@@ -5,7 +5,7 @@ This repository contains the necessary files and instructions for scheduling EC2
 
 ## Requirements
  - Install terraform [video](https://www.youtube.com/watch?v=Cn6xYf0QJME&t=8s)
- - Create IAM user with programmatic access  [video](https://www.youtube.com/watch?v=Xx_-IA9qnuI)
+ - Create a programmatic user with the permissions specified in the permission.json file
 ## Usage
 1. Clone this repository to your local machine:
 
