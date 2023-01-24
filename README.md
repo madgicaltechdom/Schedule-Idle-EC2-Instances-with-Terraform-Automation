@@ -68,12 +68,15 @@ This repository contains the necessary files and instructions for scheduling EC2
    ```
 10. Run Terraform plan to preview the changes:
     ```
-   terraform plan
-   ```
-11.  Apply the changes:
-     ```
+    terraform plan
+    ```
+11. Apply the changes
+```
      terraform apply
-        ```
+ ```
+   
+   
+
 
 
 # Verify Machines Status
