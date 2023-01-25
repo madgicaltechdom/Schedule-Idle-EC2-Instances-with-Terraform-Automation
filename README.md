@@ -89,12 +89,11 @@ This repository contains the necessary files and instructions for scheduling EC2
 ![Screenshot (164) (1)](https://user-images.githubusercontent.com/109335469/213730422-0e4803f2-4fc8-45ba-bfe0-0cad41313a79.png) 
 
 
- <img width="814" alt="Screenshot (163) (1)" src="https://user-images.githubusercontent.com/109335469/214507385-08106821-155b-4522-ac0c-4475034d46bc.png">
+  
 
+<img width="812" alt="Screenshot (1631)" src="https://user-images.githubusercontent.com/109335469/214514799-3f224341-661c-4227-9c5b-0fe2887584c6.png">
 
-
- <img width="768" alt="Screenshot (165)" src="https://user-images.githubusercontent.com/109335469/214507482-694d1d9e-023a-4481-b74f-be71652874d0.png">
-
+![Screenshot (165) (1)](https://user-images.githubusercontent.com/109335469/214514514-c45e39d1-ade5-4adf-929a-e001af5a88da.jpg)
 
 
 
