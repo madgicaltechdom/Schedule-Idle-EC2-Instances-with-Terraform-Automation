@@ -19,7 +19,7 @@ This repository contains the necessary files and instructions for scheduling EC2
     ```
    cd Multi_Machine_Schedule
     ```
-3. Change the instances array  value in the file variable.tf to meet your requirements.
+3. Change the instances array  value in the file variable.tf to meet your requirements.Give your instance id in "source_instances_map" variable in qa array, which you want to add  for scheduling.
     ```
     variable "source_instances_map" {
        description = "A map from instances to a list of instance id"
@@ -106,4 +106,9 @@ https://us-east-2.console.aws.amazon.com/systems-manager/automation/executions?r
 <img width="906" alt="Screenshot (166)" src="https://user-images.githubusercontent.com/109335469/213734723-5a2d5503-472f-48d2-b827-c9225e2ba14f.png">
 
 I took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) and these are [video1](https://t43312857.p.clickup-attachments.com/t43312857/37a20fb7-f878-486f-9bb3-0ae66e34b169/Multi-Machine-Scheduling-kaumudi.mp4) and [video2](https://drive.google.com/drive/folders/1NUTGQu2hobc5figWs2vMgVgdtjh-_uOu) for  implementation.
+
+- Here is time Zone converter for IST to UTC :
+
+![web-screenshot-25-01-2023 (4)](https://user-images.githubusercontent.com/109335469/214537941-37ab6022-d49a-4e50-8d27-623c77007e05.jpg)
+
 
