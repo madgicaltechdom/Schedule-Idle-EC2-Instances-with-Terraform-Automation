@@ -7,6 +7,8 @@ This repository contains the necessary files and instructions for scheduling EC2
  - Install terraform [video](https://www.youtube.com/watch?v=Cn6xYf0QJME&t=8s)
  -  Setup your AWS account [video](https://www.youtube.com/watch?v=XhW17g73fvY&t=357s)
  - Create a programmatic user with the permissions specified in the [permission.json](https://github.com/kaumudi766/Multi_Machine_Schedule/blob/main/permission.json) file
+ -We must have running machines which we want to configure
+ 
 ## Usage
 1. Clone this repository to your local machine:
 
