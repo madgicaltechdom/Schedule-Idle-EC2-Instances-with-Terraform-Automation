@@ -7,7 +7,7 @@ This repository contains the necessary files and instructions for scheduling EC2
  - Install terraform [video](https://www.youtube.com/watch?v=Cn6xYf0QJME&t=8s)
  -  Setup your AWS account [video](https://www.youtube.com/watch?v=XhW17g73fvY&t=357s)
  - Create a programmatic user with the permissions specified in the [permission.json](https://github.com/kaumudi766/Multi_Machine_Schedule/blob/main/permission.json) file
- -We must have running machines which we want to configure
+ - We must have running machines/instances which we want to configure.
  
 ## Usage
 1. Clone this repository to your local machine:
@@ -61,8 +61,8 @@ This repository contains the necessary files and instructions for scheduling EC2
     }
    ```
 8. Create a new workspace for each environment you want to deploy, for example for qa (testing): 
-   ```
-     terraform workspace new qa 
+    ```
+    terraform workspace new qa 
      ```
  
 9. Initialize Terraform by running:
@@ -84,11 +84,9 @@ This repository contains the necessary files and instructions for scheduling EC2
 # Verify Machines Status
 1. Click on the link below to see status,Also you can see the time slot by implementing 5 minute later and run the code to see it's running or stopped status as shown below: 
 
- https://us-east-2.console.aws.amazon.com/cloudwatch/home?region=us-east-2#rules:
+    https://us-east-2.console.aws.amazon.com/cloudwatch/home?region=us-east-2#rules:
 
 ![Screenshot (164) (1)](https://user-images.githubusercontent.com/109335469/213730422-0e4803f2-4fc8-45ba-bfe0-0cad41313a79.png) 
-
-
 
 <img width="814" alt="Screenshot (163) (1)" src="https://user-images.githubusercontent.com/109335469/214286397-0c6b5abb-fb89-4448-aded-4dec1d77dbaa.png">
 
