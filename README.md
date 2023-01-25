@@ -101,5 +101,5 @@ https://us-east-2.console.aws.amazon.com/systems-manager/automation/executions?r
 
 <img width="906" alt="Screenshot (166)" src="https://user-images.githubusercontent.com/109335469/213734723-5a2d5503-472f-48d2-b827-c9225e2ba14f.png">
 
-I took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) and this is [video1](https://t43312857.p.clickup-attachments.com/t43312857/37a20fb7-f878-486f-9bb3-0ae66e34b169/Multi-Machine-Scheduling-kaumudi.mp4) and [video2](https://drive.google.com/drive/folders/1NUTGQu2hobc5figWs2vMgVgdtjh-_uOu) for  implementation.
+I took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) and these are [video1](https://t43312857.p.clickup-attachments.com/t43312857/37a20fb7-f878-486f-9bb3-0ae66e34b169/Multi-Machine-Scheduling-kaumudi.mp4) and [video2](https://drive.google.com/drive/folders/1NUTGQu2hobc5figWs2vMgVgdtjh-_uOu) for  implementation.
 
