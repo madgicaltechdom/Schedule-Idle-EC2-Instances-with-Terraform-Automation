@@ -5,6 +5,7 @@ variable "workspace_to_environment_map" {
     prd = "prd"
   }
 }
+
 variable "source_instances_map" {
   description = "A map from instances to a list of instance id"
   type        = map(any)
@@ -13,6 +14,7 @@ variable "source_instances_map" {
     prd = []
   }
 }
+
 variable "cron_stop" {
   description = "Cron expression to define when to trigger a stop of the DB"
   default     = "30 14 ? * MON-SAT *"
