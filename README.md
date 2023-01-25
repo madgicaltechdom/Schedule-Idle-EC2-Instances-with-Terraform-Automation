@@ -16,7 +16,7 @@ This repository contains the necessary files and instructions for scheduling EC2
     ```
    cd Multi_Machine_Schedule
     ```
-3. Change the instances array starting at value in the file variable.tf to meet your requirements.
+3. Change the instances array  value in the file variable.tf to meet your requirements.
     ```
     variable "source_instances_map" {
        description = "A map from instances to a list of instance id"
@@ -27,21 +27,21 @@ This repository contains the necessary files and instructions for scheduling EC2
         }
     }
     ```
-4. Change the  stopping time  at line 21 in the file variable.tf to meet your requirements.
+4. Change the  stopping time  value in the file variable.tf to meet your requirements.
     ```
     variable "cron_stop" {
         description = "Cron expression to define when to trigger a stop of the DB"
         default     = "30 14 ? * MON-SAT *"
     }
    ```
- 5. Change  starting time  at line number 26 in the file varible.tf to meet your requirements
+ 5. Change  starting time  value in the file variable.tf to meet your requirements
     ```
     variable "cron_start" {
         description = "Cron expression to define when to trigger a start of the DB"
         default     = "30 03 ? * MON-SAT *"
      }
     ```
-6. Change the AWS access key value in the file varible.tf to meet your requirements.
+6. Change the AWS access key value in the file variable.tf to meet your requirements.
     ```
     variable "access_key" {
         description = "value of access key"
