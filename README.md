@@ -78,7 +78,6 @@ This repository contains the necessary files and instructions for scheduling EC2
    
 
 
-
 # Verify Machines Status
 1. Click on the link below to see status,Also you can see the time slot by implementing 5 minute later and run the code to see it's running or stopped status as shown below: 
 
