@@ -13,9 +13,9 @@ This repository contains the necessary files and instructions for scheduling EC2
  
  ## Here is an example of a cron job that runs a script:-
   This cron job is made up of several fields, each separated by a space:
-  
+ ``` 
 [Minute] [Hour] [Day_of_Month] [Month_of_Year] [Day_of_Week] 
-
+```
 - The first field is for minutes (0-59)
 - The second field is for hours (0-23)
 - The third field is for days of the month (1-31)
