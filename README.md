@@ -2,8 +2,8 @@
 This repository contains the necessary files and instructions for scheduling EC2 machines using Terraform. With this solution, you'll be able to schedule the start and stop of your instances based on your business needs.
 
  These are two videos :
- 1. step Implementation [video](https://drive.google.com/file/d/1zTsWASfrs24O1K8K5QWnbp5VNlA7xTdI/view?usp=sharing) and 
- 2. Live process [video](https://drive.google.com/file/d/1Zs0K5jZo8RS6i1lvsxdym3m9Nf44xNps/view?usp=sharing)  for  implementation.
+ 1. Step by Step User Guide   [video](https://drive.google.com/file/d/1zTsWASfrs24O1K8K5QWnbp5VNlA7xTdI/view?usp=sharing) and 
+ 2. Live Process [video](https://drive.google.com/file/d/1Zs0K5jZo8RS6i1lvsxdym3m9Nf44xNps/view?usp=sharing)  for  implementation.
 
 ## Requirements
  - Install terraform [video](https://www.youtube.com/watch?v=Cn6xYf0QJME&t=8s)
@@ -11,7 +11,7 @@ This repository contains the necessary files and instructions for scheduling EC2
  - Create a programmatic user with the permissions specified in the [permission.json](https://github.com/kaumudi766/Multi_Machine_Schedule/blob/main/permission.json) file
  - We must have running machines/instances which we want to Schedule.
  
- ## Here is an example of a cron job that runs a script:-
+ ## Cronjob Fundamentals:
   This cron job is made up of several fields, each separated by a space:
  ``` 
 [Minute] [Hour] [Day_of_Month] [Month_of_Year] [Day_of_Week] 
@@ -44,14 +44,14 @@ This repository contains the necessary files and instructions for scheduling EC2
         }
     }
     ```
-4. Change the  stopping time  value in the file variable.tf to meet your requirements.Here "30 14' is UTC time which means 9pm in IST for timing you can watch chat which i pasted last page of this file.Also machine is stopped at 9pm  from Monday to Saturday,according to your requirements you can set your days. 
+4. Change the  stopping time  value in the file variable.tf to meet your requirements.Here "30 14' is UTC time which means 9pm in IST for timing you can watch chart which we pasted last page of this file.Also machine is stopped at 9pm  from Monday to Saturday,according to your requirements you can set your days. 
     ```
     variable "cron_stop" {
         description = "Cron expression to define when to trigger a stop of the DB"
         default     = "30 14 ? * MON-SAT *"
     }
    ```
- 5. Change  starting time  value in the file variable.tf to meet your requirements.Here "30 03" is UTC time which means 9am morning in IST for timing you can watch chat which i pasted last page of this file.Also machine is started at 9am from Monday to Saturday,according to your requirement you can set your days.
+ 5. Change  starting time  value in the file variable.tf to meet your requirements.Here "30 03" is UTC time which means 9am morning in IST for timing you can watch chart which we pasted last page of this file.Also machine is started at 9am from Monday to Saturday,according to your requirement you can set your days.
     ```
     variable "cron_start" {
         description = "Cron expression to define when to trigger a start of the DB"
@@ -119,9 +119,11 @@ https://us-east-2.console.aws.amazon.com/systems-manager/automation/executions?r
 
 <img width="906" alt="Screenshot (166)" src="https://user-images.githubusercontent.com/109335469/213734723-5a2d5503-472f-48d2-b827-c9225e2ba14f.png">
 
+
+## References :
 I took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) and  These are two videos :
- 1. step Implementation [video](https://drive.google.com/file/d/1zTsWASfrs24O1K8K5QWnbp5VNlA7xTdI/view?usp=sharing) and 
- 2. Live process [video](https://drive.google.com/file/d/1Zs0K5jZo8RS6i1lvsxdym3m9Nf44xNps/view?usp=sharing)  for  implementation.
+ 1. Step by Step User Guide  [video](https://drive.google.com/file/d/1zTsWASfrs24O1K8K5QWnbp5VNlA7xTdI/view?usp=sharing) and 
+ 2. Live Process [video](https://drive.google.com/file/d/1Zs0K5jZo8RS6i1lvsxdym3m9Nf44xNps/view?usp=sharing)  for  implementation.
 
 
 - Here is time Zone converter for IST to UTC :
