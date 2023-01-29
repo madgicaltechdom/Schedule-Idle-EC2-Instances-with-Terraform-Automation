@@ -128,4 +128,7 @@ I took information from this [article](https://dnx.solutions/reducing-aws-costs-
 
 ![web-screenshot-25-01-2023 (4)](https://user-images.githubusercontent.com/109335469/214537941-37ab6022-d49a-4e50-8d27-623c77007e05.jpg)
 
+# Contributing
+We are very grateful for any contributions you are willing to make. Please have a look here to get started. If you aim to make a large change, it is helpful to discuss the change first in a new GitHub issue. Feel free to open one!
+
 
