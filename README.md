@@ -1,13 +1,25 @@
 # EC2 Machine Scheduling using Terraform
 This repository contains the necessary files and instructions for scheduling EC2 machines using Terraform. With this solution, you'll be able to schedule the start and stop of your instances based on your business needs.
 
- These are [video1](https://drive.google.com/drive/folders/1NUTGQu2hobc5figWs2vMgVgdtjh-_uOu) and [video2](https://drive.google.com/drive/folders/1NUTGQu2hobc5figWs2vMgVgdtjh-_uOu)  for  implementation.
+ These are two videos :
+ 1. step Implementation [video](https://drive.google.com/file/d/1zTsWASfrs24O1K8K5QWnbp5VNlA7xTdI/view?usp=sharing) and 
+ 2. Live process [video](https://drive.google.com/file/d/1Zs0K5jZo8RS6i1lvsxdym3m9Nf44xNps/view?usp=sharing)  for  implementation.
 
 ## Requirements
  - Install terraform [video](https://www.youtube.com/watch?v=Cn6xYf0QJME&t=8s)
  -  Setup your AWS account [video](https://www.youtube.com/watch?v=XhW17g73fvY&t=357s)
  - Create a programmatic user with the permissions specified in the [permission.json](https://github.com/kaumudi766/Multi_Machine_Schedule/blob/main/permission.json) file
  - We must have running machines/instances which we want to Schedule.
+ 
+ ## Here is an example of a cron job that runs a script:-
+  This cron job is made up of several fields, each separated by a space:
+
+- The first field is for minutes (0-59)
+- The second field is for hours (0-23)
+- The third field is for days of the month (1-31)
+- The fourth field is for months (1-12)
+- The fifth field is for days of the week (0-7, where both 0 and 7 represent Sunday)
+- The sixth field is for year
  
 ## Usage
 1. Clone this repository to your local machine:
@@ -19,7 +31,7 @@ This repository contains the necessary files and instructions for scheduling EC2
     ```
    cd Multi_Machine_Schedule
     ```
-3. Change the instances array  value in the file variable.tf to meet your requirements.Give your instance id in "source_instances_map" variable in qa array, which you want to add  for scheduling.
+3. Change the instances array  value in the file variable.tf to meet your requirements.Give your instance id in "source_instances_map" variable in specific array for example qa array, which you want to add  for scheduling.
     ```
     variable "source_instances_map" {
        description = "A map from instances to a list of instance id"
@@ -30,14 +42,14 @@ This repository contains the necessary files and instructions for scheduling EC2
         }
     }
     ```
-4. Change the  stopping time  value in the file variable.tf to meet your requirements.
+4. Change the  stopping time  value in the file variable.tf to meet your requirements.Here "30 14' is UTC time which means 9pm in IST for timing you can watch chat which i pasted last page of this file.Also machine is stopped at 9pm  from Monday to Saturday,according to your requirements you can set your days. 
     ```
     variable "cron_stop" {
         description = "Cron expression to define when to trigger a stop of the DB"
         default     = "30 14 ? * MON-SAT *"
     }
    ```
- 5. Change  starting time  value in the file variable.tf to meet your requirements
+ 5. Change  starting time  value in the file variable.tf to meet your requirements.Here "30 03" is UTC time which means 9am morning in IST for timing you can watch chat which i pasted last page of this file.Also machine is started at 9am from Monday to Saturday,according to your requirement you can set your days.
     ```
     variable "cron_start" {
         description = "Cron expression to define when to trigger a start of the DB"
@@ -52,7 +64,7 @@ This repository contains the necessary files and instructions for scheduling EC2
     }
      ```
 
-7. Change the AWS secret key value in the file variable.tf to meet your    requirements.
+7. Change the AWS secret key value in the file variable.tf to meet your   requirements.
     
     ``` 
     variable "secret_key" {
