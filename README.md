@@ -33,7 +33,7 @@ This repository contains the necessary files and instructions for scheduling EC2
     ```
    cd Multi_Machine_Schedule
     ```
-3. Change the instances array  value in the file variable.tf to meet your requirements.Give your instance id in "source_instances_map" variable in specific array for example qa array, which you want to add  for scheduling.
+3. To meet your needs, alter the value of the instances array in the file variable.tf. Give your instance id to the "source instances map" variable in the particular array you want to add for scheduling, for instance the qa array.
     ```
     variable "source_instances_map" {
        description = "A map from instances to a list of instance id"
@@ -44,14 +44,14 @@ This repository contains the necessary files and instructions for scheduling EC2
         }
     }
     ```
-4. Change the  stopping time  value in the file variable.tf to meet your requirements.Here "30 14' is UTC time which means 9pm in IST for timing you can watch chart which we pasted last page of this file.Also machine is stopped at 9pm  from Monday to Saturday,according to your requirements you can set your days. 
+4. To match your requirements, modify the stopping time value in the file variable.tf. In this case, "30 14" is UTC time, which corresponds to 9 p.m. IST. For timing, please refer to the chart we printed on the last page of this file. Additionally, the machine is shut off at 9 p.m., Monday through Saturday. You can customise your days according to your needs. 
     ```
     variable "cron_stop" {
         description = "Cron expression to define when to trigger a stop of the DB"
         default     = "30 14 ? * MON-SAT *"
     }
    ```
- 5. Change  starting time  value in the file variable.tf to meet your requirements.Here "30 03" is UTC time which means 9am morning in IST for timing you can watch chart which we pasted last page of this file.Also machine is started at 9am from Monday to Saturday,according to your requirement you can set your days.
+ 5. Change the starting time value in the file variable.tf to suit your needs. For timing, please refer to the chart on the last page of this file. In this case, "30 03" denotes UTC time, which corresponds to 9 a.m. IST. Additionally, the machine is turned on at 9 a.m., Monday through Saturday. You can customise your days according to your needs.
     ```
     variable "cron_start" {
         description = "Cron expression to define when to trigger a start of the DB"
