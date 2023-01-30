@@ -40,7 +40,7 @@ This repository contains the necessary files and instructions for scheduling EC2
        type        = map(any)
        default = {
            qa  = ["i-0f31364caf36906f4", "i-0d14c3b9fe0ec4f54", "i-0f0ae101cf8e3202e", "i-0d605ef016c561e57"]
-            prd = []
+           prd = []
         }
     }
     ```
@@ -122,7 +122,7 @@ https://us-east-2.console.aws.amazon.com/systems-manager/automation/executions?r
 
 ## References :
 I took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) and  These are two videos :
- 1. Step by Step User Guide  [video](https://drive.google.com/file/d/1zTsWASfrs24O1K8K5QWnbp5VNlA7xTdI/view?usp=sharing) and 
+ 1. Step by Step User Guide  [video](https://drive.google.com/file/d/1zTsWASfrs24O1K8K5QWnbp5VNlA7xTdI/view?usp=sharing).
  2. Live Process [video](https://drive.google.com/file/d/1Zs0K5jZo8RS6i1lvsxdym3m9Nf44xNps/view?usp=sharing)  for  implementation.
 
 
