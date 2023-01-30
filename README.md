@@ -121,7 +121,7 @@ https://us-east-2.console.aws.amazon.com/systems-manager/automation/executions?r
 
 
 ## References :
-I took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) and  These are two videos :
+we took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) and  These are two videos :
  1. Step by Step User Guide  [video](https://drive.google.com/file/d/1zTsWASfrs24O1K8K5QWnbp5VNlA7xTdI/view?usp=sharing).
  2. Live Process [video](https://drive.google.com/file/d/1Zs0K5jZo8RS6i1lvsxdym3m9Nf44xNps/view?usp=sharing)  for  implementation.
 
