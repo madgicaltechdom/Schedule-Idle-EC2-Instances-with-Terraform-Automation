@@ -2,7 +2,7 @@
 This repository contains the necessary files and instructions for scheduling EC2 machines using Terraform. With this solution, you'll be able to schedule the start and stop of your instances based on your business needs.
 
  These are two videos :
- 1. Step by Step User Guide   [video](https://drive.google.com/file/d/1zTsWASfrs24O1K8K5QWnbp5VNlA7xTdI/view?usp=sharing) and 
+ 1. Step by Step User Guide   [video](https://drive.google.com/file/d/1zTsWASfrs24O1K8K5QWnbp5VNlA7xTdI/view?usp=sharing).
  2. Live Process [video](https://drive.google.com/file/d/1Zs0K5jZo8RS6i1lvsxdym3m9Nf44xNps/view?usp=sharing)  for  implementation.
 
 ## Requirements
