@@ -10,7 +10,7 @@ variable "source_instances_map" {
   description = "A map from instances to a list of instance id"
   type        = map(any)
   default = {
-    qa  = ["i-0f31364caf36906f4", "i-0d14c3b9fe0ec4f54", "i-0f0ae101cf8e3202e", "i-0d605ef016c561e57"]
+    qa  = [ "i-0f0ae101cf8e3202e", "i-0e2a806f55ef419d2", "i-0f31364caf36906f4", "i-0d605ef016c561e57", "i-0d14c3b9fe0ec4f54","i-046d72bb328e459b3"]
     prd = []
   }
 }
