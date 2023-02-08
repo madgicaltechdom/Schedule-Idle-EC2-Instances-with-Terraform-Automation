@@ -96,7 +96,7 @@ This repository contains the necessary files and instructions for scheduling EC2
 
 
 # Verify Machines Status
-1. Click on the link below to see status,also you can see the time slot by implementing 5 minute later and run the code to see it's running or stopped status as shown below: 
+1. Click on the link below to see status, also you can see the time slot by implementing 5 minute later and run the code to see it's running or stopped status as shown below: 
 
     https://us-east-2.console.aws.amazon.com/cloudwatch/home?region=us-east-2#rules:
 
@@ -121,10 +121,10 @@ https://us-east-2.console.aws.amazon.com/systems-manager/automation/executions?r
 
 
 ## References :
-we took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) and  These are two videos :
+We took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) and  these are two videos :
  1. Step by Step User Guide  [video](https://drive.google.com/file/d/1zTsWASfrs24O1K8K5QWnbp5VNlA7xTdI/view?usp=sharing).
  2. Live Process [video](https://drive.google.com/file/d/1Zs0K5jZo8RS6i1lvsxdym3m9Nf44xNps/view?usp=sharing)  for  implementation.
-
+ 3. Link for [time zone](https://www.worldtimebuddy.com/ist-to-utc-converter)
 
 - Here is time Zone converter for IST to UTC :
 
