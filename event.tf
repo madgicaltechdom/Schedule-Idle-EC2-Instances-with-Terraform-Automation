@@ -5,6 +5,13 @@ resource "aws_cloudwatch_event_rule" "EC2_stop" {
   schedule_expression = "cron(${var.cron_stop})"
 }
 
+data "aws_instances" "instances" {
+  instance_tags = {
+    environment = "qa"
+  }
+  instance_state_names = ["running", "stopped"]
+}
+
 resource "aws_cloudwatch_event_target" "EC2_stop" {
   count = var.enable ? 1 : 0
   arn   = "arn:aws:ssm:${data.aws_region.current.name}::automation-definition/AWS-StopEC2Instance:$DEFAULT"
@@ -13,7 +20,7 @@ resource "aws_cloudwatch_event_target" "EC2_stop" {
       AutomationAssumeRole = [
         aws_iam_role.ssm_automation[0].arn,
       ]
-      InstanceId = local.source_instances
+      InstanceId = data.aws_instances.instances.ids
     }
   )
   role_arn  = aws_iam_role.event[0].arn
@@ -36,7 +43,7 @@ resource "aws_cloudwatch_event_target" "EC2_start" {
       AutomationAssumeRole = [
         aws_iam_role.ssm_automation[0].arn,
       ]
-      InstanceId = local.source_instances
+      InstanceId = data.aws_instances.instances.ids
     }
   )
   role_arn  = aws_iam_role.event[0].arn
