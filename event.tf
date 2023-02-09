@@ -7,7 +7,7 @@ resource "aws_cloudwatch_event_rule" "EC2_stop" {
 
 data "aws_instances" "instances" {
   instance_tags = {
-    environment = "qa"
+    environment = local.environment
   }
   instance_state_names = ["running", "stopped"]
 }
