@@ -34,15 +34,15 @@ This repository contains the necessary files and instructions for scheduling EC2
    cd Multi_Machine_Schedule
    ```
     
-3. Open your AWS Account, search for the EC2, click on the Tags, then the Manage tags button. Here you need to select the instances in which you need to make scheduling and add a tag, in the Key field select environment, and in Value select qa or prd according to your need then click on the Add Tag button.
+3. Login to your AWS Account, search for the EC2, click on the Tags, then the Manage tags button. Here you need to select the instances in which you need to make scheduling and add a tag, in the Key field select environment, and in Value select qa or prd according to your need then click on the Add Tag button.
 
 ![image](https://user-images.githubusercontent.com/101810595/217817324-ee01ca76-34d4-4e4b-b8e4-8b2b4905fe8b.png)
 
 4. Optional, if you want to add another tag then first you need to add that tag in the workspace_to_environment_map variable in the varible.tf file and use that tag for scheduling.
 
-![image](https://user-images.githubusercontent.com/101810595/217818801-3193f816-ef54-4692-ae85-16d2b3bec653.png)
+![image](https://user-images.githubusercontent.com/101810595/217820573-e7b7cd32-7ab4-4561-8d27-593abf6431d7.png)
 
-4. To match your requirements, modify the stopping time value in the file variable.tf. In this case, "30 14" is UTC time, which corresponds to 9 p.m. IST. For timing, please refer to the chart we printed on the last page of this file. Additionally, the machine is shut off at 9 p.m., Monday through Saturday. You can customise your days according to your needs. 
+5. To match your requirements, modify the stopping time value in the file variable.tf. In this case, "30 14" is UTC time, which corresponds to 9 p.m. IST. For timing, please refer to the chart we printed on the last page of this file. Additionally, the machine is shut off at 9 p.m., Monday through Saturday. You can customise your days according to your needs. 
    ```
     variable "cron_stop" {
         description = "Cron expression to define when to trigger a stop of the DB"
@@ -50,7 +50,7 @@ This repository contains the necessary files and instructions for scheduling EC2
     }
    ```
    
-4. Change the starting time value in the file variable.tf to suit your needs. For timing, please refer to the chart on the last page of this file. In this case, "30 03" denotes UTC time, which corresponds to 9 a.m. IST. Additionally, the machine is turned on at 9 a.m., Monday through Saturday. You can customise your days according to your needs.
+6. Change the starting time value in the file variable.tf to suit your needs. For timing, please refer to the chart on the last page of this file. In this case, "30 03" denotes UTC time, which corresponds to 9 a.m. IST. Additionally, the machine is turned on at 9 a.m., Monday through Saturday. You can customise your days according to your needs.
    ```
     variable "cron_start" {
         description = "Cron expression to define when to trigger a start of the DB"
@@ -58,7 +58,7 @@ This repository contains the necessary files and instructions for scheduling EC2
     }
    ```
     
-5. Change the AWS access key value in the file variable.tf to meet your requirements.
+7. Change the AWS access key value in the file variable.tf to meet your requirements.
    ```
     variable "access_key" {
         description = "value of access key"
@@ -66,7 +66,7 @@ This repository contains the necessary files and instructions for scheduling EC2
     }
    ```
 
-6. Change the AWS secret key value in the file variable.tf to meet your   requirements.
+8. Change the AWS secret key value in the file variable.tf to meet your   requirements.
    ``` 
     variable "secret_key" {
         description = "value of secret key"
@@ -74,22 +74,22 @@ This repository contains the necessary files and instructions for scheduling EC2
     }
    ```
    
-7. Create a new workspace for each environment you want to deploy, for example for qa (testing): 
+9. Create a new workspace for each environment you want to deploy, for example for qa (testing): 
    ```
    terraform workspace new qa 
    ```
  
-8. Initialize Terraform by running:
+10. Initialize Terraform by running:
    ```
    terraform init
    ```
    
-9. Run Terraform plan to preview the changes:
+11. Run Terraform plan to preview the changes:
    ```
    terraform plan
    ```
    
-10. Apply the changes
+12. Apply the changes
    ```
    terraform apply
    ```
