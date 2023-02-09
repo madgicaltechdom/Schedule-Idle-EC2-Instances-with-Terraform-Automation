@@ -75,24 +75,24 @@ This repository contains the necessary files and instructions for scheduling EC2
    ```
    
 9. Create a new workspace for each environment you want to deploy, for example for qa (testing): 
-   ```
-   terraform workspace new qa 
-   ```
+    ```
+    terraform workspace new qa 
+    ```
  
 10. Initialize Terraform by running:
-   ```
-   terraform init
-   ```
+    ```
+    terraform init
+    ```
    
 11. Run Terraform plan to preview the changes:
-   ```
-   terraform plan
-   ```
+    ```
+    terraform plan
+    ```
    
 12. Apply the changes
-   ```
-   terraform apply
-   ```
+    ```
+    terraform apply
+    ```
 
 # Verify Machines Status
 
