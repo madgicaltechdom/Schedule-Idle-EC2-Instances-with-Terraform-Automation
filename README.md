@@ -1,12 +1,14 @@
 # EC2 Machine Scheduling using Terraform
-This repository contains the necessary files and instructions for scheduling EC2 machines using Terraform. With this solution, you'll be able to schedule the start and stop of your instances based on your business needs.
+Many businesses are focused about lowering the costs of running AWS EC2 instances. Terraform can help you save money by automating EC2 instance management.This solution enables you to automate the start and stop off your instances based on your business requirements. 
+
+Non-production machines can be turned off after hours and on weekends. The machines can be started whenever working hours begin. This might result in more than 50% of your ec2 computers being eliminated, saving you a lot.
 
 ## Requirements
 
  - Install terraform [video](https://www.youtube.com/watch?v=Cn6xYf0QJME&t=8s).
  - Setup your AWS account [video](https://www.youtube.com/watch?v=XhW17g73fvY&t=357s).
  - Create a programmatic user with the permissions specified in the [permission.json](https://github.com/kaumudi766/Multi_Machine_Schedule/blob/main/permission.json) file.
- - We must have running machines/instances which we want to Schedule.
+ - To schedule ec2 instances, we must have tagged them with the 'environment' tag.
  
 ## Cronjob Fundamentals:
 
