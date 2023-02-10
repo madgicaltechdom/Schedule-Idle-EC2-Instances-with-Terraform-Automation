@@ -125,9 +125,8 @@ https://us-east-2.console.aws.amazon.com/systems-manager/automation/executions?r
 ## References:
 
 We took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) and  these are two videos :
- 1. Step by Step User Guide  [video](https://drive.google.com/file/d/1zTsWASfrs24O1K8K5QWnbp5VNlA7xTdI/view?usp=sharing).
- 2. Live Process [video](https://drive.google.com/file/d/1Zs0K5jZo8RS6i1lvsxdym3m9Nf44xNps/view?usp=sharing)  for  implementation.
- 3. Link for [time zone](https://www.worldtimebuddy.com/ist-to-utc-converter)
+ 1. Step by Step User Guide  [video](https://drive.google.com/file/d/1r1K_e_GA36OOJ8ncNlInMCAX2ZOULhEI/view?usp=share_link).
+ 2. Link for [time zone](https://www.worldtimebuddy.com/ist-to-utc-converter)
 
 - Here is time Zone converter for IST to UTC :
 
@@ -137,7 +136,7 @@ We took information from this [article](https://dnx.solutions/reducing-aws-costs
 
 We are very grateful for any contributions you are willing to make. Please have a look here to get started. If you aim to make a large change, it is helpful to discuss the change first in a new GitHub issue. Feel free to open one!
 
-# LICENSE :
+# LICENCE:
 
 Copyright (c) 2023 MadgicalTechdom and contributors
 
