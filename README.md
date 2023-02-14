@@ -38,19 +38,19 @@ Non-production machines can be turned off after hours and on weekends. The machi
     
 3. Login to your AWS Account, search for the EC2, click on the Tags, then the Manage tags button. Here you need to select the instances in which you need to make scheduling and add a tag, in the Key field select environment, and in Value select qa or prd according to your need then click on the Add Tag button.
 
-![image](https://user-images.githubusercontent.com/101810595/218731249-91cb094e-10dd-40c3-aa5b-9dcba2949db9.png)
+![image](https://user-images.githubusercontent.com/101810595/218736709-b072c59d-a8dd-4410-aed5-8ed546067720.png)
 
 4. Optional, if you want to add another tag then first you need to add that tag in the workspace_to_environment_map variable in the varible.tf file and use that tag for scheduling.
 
-```
-variable "workspace_to_environment_map" {
-  type = map(string)
-  default = {
-    qa  = "qa"
-    prd = "prd"
-  }
-}
-```
+   ```
+   variable "workspace_to_environment_map" {
+     type = map(string)
+     default = {
+       qa  = "qa"
+       prd = "prd"
+     }
+   }
+   ```
 
 5. To match your requirements, modify the stopping time value in the file variable.tf. In this case, "30 14" is UTC time, which corresponds to 8 p.m. IST. For timing, please refer to the chart we printed on the last of this file. Additionally, the machine is shut off at 8 p.m every Monday to Saturday. You can customise your days according to your need.
    ```
