@@ -43,13 +43,13 @@ Non-production machines can be turned off after hours and on weekends. The machi
 4. Optional, if you want to add another tag then first you need to add that tag in the workspace_to_environment_map variable in the varible.tf file and use that tag for scheduling.
 
    ```
-   variable "workspace_to_environment_map" {
-     type = map(string)
-     default = {
-       qa  = "qa"
-       prd = "prd"
-     }
-   }
+    variable "workspace_to_environment_map" {
+      type = map(string)
+      default = {
+        qa  = "qa"
+        prd = "prd"
+      }
+    }
    ```
 
 5. To match your requirements, modify the stopping time value in the file variable.tf. In this case, "30 14" is UTC time, which corresponds to 8 p.m. IST. For timing, please refer to the chart we printed on the last of this file. Additionally, the machine is shut off at 8 p.m every Monday to Saturday. You can customise your days according to your need.
