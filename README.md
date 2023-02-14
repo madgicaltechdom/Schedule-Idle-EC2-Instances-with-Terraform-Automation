@@ -12,26 +12,26 @@ Non-production machines can be turned off after hours and on weekends. The machi
  
 ## Cronjob Fundamentals:
 
-  This cron job is made up of several fields, each separated by a space:
-``` 
-[Minute] [Hour] [Day_of_Month] [Month_of_Year] [Day_of_Week] 
-```
+ This cron job is made up of several fields, each separated by a space:
+ ``` 
+ [Minute] [Hour] [Day_of_Month] [Month_of_Year] [Day_of_Week] 
+ ```
 
-- The first field is for minutes (0-59)
-- The second field is for hours (0-23)
-- The third field is for days of the month (1-31)
-- The fourth field is for months (1-12)
-- The fifth field is for days of the week (0-7, where both 0 and 7 represent Sunday)
-- The sixth field is for year by default it take current year.
+ - The first field is for minutes (0-59).
+ - The second field is for hours (0-23).
+ - The third field is for days of the month (1-31).
+ - The fourth field is for months (1-12).
+ - The fifth field is for days of the week (0-7, where both 0 and 7 represent Sunday).
+ - The sixth field is for year by default it take current year.
  
 ## Usage
 
-1. Clone this repository to your local machine:
+1. Clone this repository to your local machine by running the below command:
    ```
    git clone https://github.com/kaumudi766/Multi_Machine_Schedule
    ```
     
-2. Navigate to the repository directory:
+2. Navigate to the repository directory by running the below command:
    ```
    cd Multi_Machine_Schedule
    ```
@@ -136,7 +136,7 @@ We took information from this [article](https://dnx.solutions/reducing-aws-costs
  1. Step by Step User Guide  [video](https://drive.google.com/file/d/1r1K_e_GA36OOJ8ncNlInMCAX2ZOULhEI/view?usp=share_link).
  2. Link for [time zone](https://www.worldtimebuddy.com/ist-to-utc-converter)
 
-- Here is time Zone converter for IST to UTC :
+- Here is time Zone converter for IST to UTC:
 
 ![web-screenshot-25-01-2023 (4)](https://user-images.githubusercontent.com/109335469/214537941-37ab6022-d49a-4e50-8d27-623c77007e05.jpg)
 
