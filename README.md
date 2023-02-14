@@ -52,7 +52,7 @@ variable "workspace_to_environment_map" {
 }
 ```
 
-5. To match your requirements, modify the stopping time value in the file variable.tf. In this case, "30 14" is UTC time, which corresponds to 9 p.m. IST. For timing, please refer to the chart we printed on the last page of this file. Additionally, the machine is shut off at 9 p.m., Monday through Saturday. You can customise your days according to your needs. 
+5. To match your requirements, modify the stopping time value in the file variable.tf. In this case, "30 14" is UTC time, which corresponds to 8 p.m. IST. For timing, please refer to the chart we printed on the last of this file. Additionally, the machine is shut off at 8 p.m every Monday to Saturday. You can customise your days according to your need.
    ```
     variable "cron_stop" {
         description = "Cron expression to define when to trigger a stop of the DB"
@@ -60,7 +60,7 @@ variable "workspace_to_environment_map" {
     }
    ```
    
-6. Change the starting time value in the file variable.tf to suit your needs. For timing, please refer to the chart on the last page of this file. In this case, "30 03" denotes UTC time, which corresponds to 9 a.m. IST. Additionally, the machine is turned on at 9 a.m., Monday through Saturday. You can customise your days according to your needs.
+6. Change the starting time value in the file variable.tf to suit your needs. For timing, please refer to the chart in the last of this file. In this case, "30 03" denotes UTC time, which corresponds to 9 a.m. IST. Additionally, the machine is turned on at 9 a.m every Monday to Saturday. You can customise your days according to your need.
    ```
     variable "cron_start" {
         description = "Cron expression to define when to trigger a start of the DB"
@@ -76,7 +76,7 @@ variable "workspace_to_environment_map" {
     }
    ```
 
-8. Change the AWS secret key value in the file variable.tf to meet your   requirements.
+8. Change the AWS secret key value in the file variable.tf to meet your requirements.
    ``` 
     variable "secret_key" {
         description = "value of secret key"
@@ -84,22 +84,22 @@ variable "workspace_to_environment_map" {
     }
    ```
    
-9. Create a new workspace for each environment you want to deploy, for example for qa (testing): 
+9. Create a new workspace for each environment you want to deploy, for example for qa(testing): 
     ```
     terraform workspace new qa 
     ```
  
-10. Initialize Terraform by running:
+10. Initialize Terraform by running below command: 
     ```
     terraform init
     ```
    
-11. Run Terraform plan to preview the changes:
+11. Run below command to preview the changes:
     ```
     terraform plan
     ```
    
-12. Apply the changes
+12. Run below command to apply the changes:
     ```
     terraform apply
     ```
