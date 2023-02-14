@@ -133,7 +133,7 @@ https://us-east-2.console.aws.amazon.com/systems-manager/automation/executions?r
 ## References:
 
 We took information from this [article](https://dnx.solutions/reducing-aws-costs-by-turning-off-development-environments-at-night-the-easy-way-without-lambda/) and  these are two videos :
- 1. Step by Step User Guide  [video](https://drive.google.com/file/d/1r1K_e_GA36OOJ8ncNlInMCAX2ZOULhEI/view?usp=share_link).
+ 1. Step by Step User Guide  [video](https://drive.google.com/file/d/1POLh1lbzGBr6_d8oDNLgSBj8giJL1nfT/view?usp=share_link).
  2. Link for [time zone](https://www.worldtimebuddy.com/ist-to-utc-converter)
 
 - Here is time Zone converter for IST to UTC:
