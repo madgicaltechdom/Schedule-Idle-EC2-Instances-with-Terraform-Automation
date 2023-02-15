@@ -36,7 +36,7 @@ Non-production machines can be turned off after hours and on weekends. The machi
    cd Multi_Machine_Schedule
    ```
     
-3. Login to your AWS Account, search for the EC2, click on the Tags, then the Manage tags button. Here you need to select the instances in which you need to make scheduling and add a tag, in the Key field select environment, and in Value select qa or prd according to your need then click on the Add Tag button.
+3. Login to your AWS Account, search for the EC2, click on the "Tags", then the "Manage tags" button. Here you need to select the instances in which you need to make scheduling and add a tag, in the Key field select "environment", and in Value select "qa" or "prd" according to your need then click on the "Add Tag" button.
 
 ![image](https://user-images.githubusercontent.com/101810595/218736709-b072c59d-a8dd-4410-aed5-8ed546067720.png)
 
