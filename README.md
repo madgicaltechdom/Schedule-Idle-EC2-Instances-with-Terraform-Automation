@@ -28,12 +28,12 @@ Non-production machines can be turned off after hours and on weekends. The machi
 
 1. Clone this repository to your local machine by running the below command:
    ```
-   git clone https://github.com/kaumudi766/Multi_Machine_Schedule
+   git clone https://github.com/madgicaltechdom/Schedule-Idle-EC2-Instances-with-Terraform-Automation.git
    ```
     
 2. Navigate to the repository directory by running the below command:
    ```
-   cd Multi_Machine_Schedule
+   cd Schedule-Idle-EC2-Instances-with-Terraform-Automation
    ```
     
 3. Login to your AWS Account, search for the EC2, click on the "Tags", then the "Manage tags" button. Here you need to select the instances in which you need to make scheduling and add a tag, in the Key field select "environment", and in Value select "qa" or "prd" according to your need then click on the "Add Tag" button.
